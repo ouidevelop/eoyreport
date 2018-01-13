@@ -499,16 +499,16 @@ body {
     position: absolute;
     right: 5em;
     bottom: -6em;
-    width: 30%;
+    width: 27vw;
     min-width: 130px;
-    max-width: 235px;
-    height: 30vw;
+    max-width: 175px;
+    height: 27vw;
     min-height: 130px;
-    max-height: 235px;
+    max-height: 175px;
     background-color: #dc1e35;
     color: #ffffff;
     z-index: 1;
-    padding: 1.5vw;
+    padding: 2%;
     line-height: 1.3;
 }
 #bbb .sixty-point {
@@ -563,7 +563,7 @@ a:hover {
 }
 #core-values p {
     width: 26rem;
-    margin: 2rem 0 2rem 3.5rem;
+    margin: 2rem 0 2rem 3.7rem;
     line-height: 1.5;
 }
 
@@ -793,7 +793,7 @@ a:hover {
 }
 #inspiration-day h3 {
     position: absolute;
-    right:185px;
+    right:30%;
     display: block;
     z-index: 2;
     text-align: center;
@@ -801,7 +801,7 @@ a:hover {
 }
 #inspiration-day .text-block {
     position: absolute;
-    right: 7vw;
+    right: 20%;
     top:0;
     z-index: 1;
     width: 11em;
@@ -870,14 +870,14 @@ a:hover {
     position: absolute;
     bottom: -6vw;
     right: 7vw;
-    width: 13vw;
-    min-width: 14rem;
-    height: 13vw;
-    min-height: 14rem;
+    width: 17vw;
+    min-width: 140px;
+    height: 17vw;
+    min-height: 140px;
     background-color: #dc1e35;
     z-index: 4;
-    padding: 1.5vw;
-    line-height: 1.1;
+    padding: 2%;
+    line-height: 1.3;
 
 }
 .modal {
@@ -1081,17 +1081,29 @@ a:hover {
         visibility: hidden;
         opacity: 0;
     }
+
     .award-text div {
         width: 100%;
     }
+
     #awards .image-gallery .image:before {
         flex-basis: 100%;
         height: 21.4vw;
     }
+
     #awards .image-gallery .image:hover:before {
-        background: rgba(255,30,52, 0.8);
+        background: rgba(255, 30, 52, 0.8);
         flex-basis: 100%;
         height: 21.4vw;
+    }
+
+    #core-values p {
+        margin: 2rem 0 2rem 8vw;
+    }
+
+    #inspiration-day .text-block {
+        right: 16%;
+
     }
 }
 @font-face {
@@ -1141,5 +1153,7 @@ a:hover {
     transition: all 0.3s linear;
     position:absolute !important;
     right: 0 !important;
-    bottom:-22.50% !important;}
+    bottom:-22.50% !important;
+}
+
 
