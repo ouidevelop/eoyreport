@@ -694,7 +694,7 @@ a:hover {
 #awards .seventy-five-percent {
     width: 72%;
     height: 21.6vw;
-    margin: 0.5em 1.5vw 0 0;
+    margin: 0.5vw 1.5vw 0 0;
     display: flex;
     display: -webkit-flex;
     flex-direction: column;
@@ -1043,6 +1043,9 @@ a:hover {
     }
     #footer {
         background: no-repeat url("assets/AnnualReport_ImageLinks_LastImage.png");
+        background-size: 100%;
+        width: 100%;
+        height: 100vw;
     }
 }
 @media only screen and (max-width: 750px) {
