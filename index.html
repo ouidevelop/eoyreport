@@ -419,12 +419,14 @@
 
         </div>
     </div>
-    <div id="inspiration-day" class="panel pin-container">
-        <div class="text">
-            <h3 class="sixty-point" >&#8220;Inspiration Day.&#8221;</h3>
+    <div class="pin-container">
+    <div id="inspiration-day" class="panel">
+
+        <div class="text" id="pin2">
+            <h3 class="sixty-point" >&#8220;Inspiration&nbsp;Day.&#8221;</h3>
             <p class="fourteen-point text-block">This year, we gave each employee the option to use one day of company time engaging in an activity that inspires him or her.</p>
         </div>
-        <div id="pin">
+        <div id="pin1">
             <p class="twenty-four-point">Visiting yarn shops in Cambria</p>
             <p class="twenty-four-point">Eco-art therapy workshop</p>
             <p class="twenty-four-point">Trying a new yoga class</p>
@@ -434,7 +436,9 @@
             <p class="twenty-four-point">Taking a ceramics class</p>
             <p class="twenty-four-point">Photographing a wedding</p>
         </div>
+
     </div>
+</div>
     <div class="red-line panel">
         <div>
 
@@ -538,17 +542,18 @@
 
 <script>
 $(document).ready(function() {
-    var pin = new $.Zebra_Pin($('#pin'), {
+    var pin1 = new $.Zebra_Pin($('#pin1'), {
+            top_spacing: 150,
             contain: true,
         }),
-        $container = $('#inspiration-day'),
+        $container = $('.pin-container'),
         additional_height = -10;
-    
-    $('button').on('click', function() {
-        additional_height = additional_height * -1;
-        $container.css('height', '+=' + additional_height);
-        pin.update();
-    });
+
+        var pin2 = new $.Zebra_Pin($('#pin2'), {
+                contain: true,
+            }),
+            $container = $('.pin-container'),
+            additional_height = -10;
 }
 
 )

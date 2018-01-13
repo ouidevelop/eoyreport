@@ -766,21 +766,21 @@ a:hover {
     -webkit-background-image: url("assets/InspirationDay/AnnualReport_ImageLinks_InspirationDay_2_larger.jpg");
     background-repeat: no-repeat;
     background-image: url("assets/InspirationDay/AnnualReport_ImageLinks_InspirationDay_2_larger.jpg");
-    background-size: cover;
+    background-size: 100%;
     width: 100%;
-    height: 154vw;
+    height: 160vw;
     display: flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: -webkit-flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    overflow-y: hidden;
+   display: -moz-flex;
+   display: -ms-flex;
+   display: -o-flex;
+   display: -webkit-flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+    display: block;
+    top: 15vw;
 }
 #inspiration-day .text {
-    position: relative;
     display: flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -789,16 +789,20 @@ a:hover {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin: 5rem 0 17rem 0
+    margin: 0 0 17rem 0
 }
 #inspiration-day h3 {
-    position: relative;
+    position: absolute;
+    right:185px;
+    display: block;
     z-index: 2;
+    text-align: center;
+    overflow: visible;
 }
 #inspiration-day .text-block {
     position: absolute;
-    right: -7em;
-    margin-top: 5em;
+    right: 7vw;
+    top:0;
     z-index: 1;
     width: 11em;
     min-width: 60px;
@@ -816,17 +820,15 @@ a:hover {
     justify-content: flex-end;
     background-color: #dc1e35;
     color: #ffffff;
-    padding: 1.5em;
-    line-height: 1.4;
+    padding: 1.3em;
+    line-height: 1.3;
 }
-#inspiration-day #pin {
-    position: relative;
-    display: flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: -webkit-flex;
-    flex-direction: column;
+.pin-container {width: 100%;}
+
+#inspiration-day #pin2 {width: 100%; padding-bottom: 25em; display: flex;}
+#inspiration-day #pin1 {
+    width: 100%;
+    display: block;
     text-align: center;
     line-height: 1.6;
     z-index: 5;
