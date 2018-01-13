@@ -59,53 +59,57 @@ body {
     -ms-flex-direction: column;
     -webkit-flex-direction: column;
     align-items: center;
-    font-size: calc( 6px + (16 - 6) * ( (100vw - 320px) / (1800 - 320) ));;
     overflow-x: hidden;
+    font-size: calc( 6px + (16 - 6) * ( (100vw - 320px) / (1800 - 320) ));;
 }
 p {
-    font-size: 1.5625vw;
     color: #333e48;
 }
 h3 {
     color: #333e48;
 }
+
+
+body {
+    font-size: calc( 6px + (16 - 6) * ( (100vw - 320px) / (1800 - 320) ));;
+}
+.fourteen-point {
+    font-family: "Interstate Light";
+    font-size: calc( 10px + (18.6 - 10) * ( (100vw - 320px) / (1800 - 320) ));;
+}
 .two-sixty-six-point {
     color: #c3c5c8;
-    font-size: calc( 111px + (355 - 111) * ( (100vw - 320px) / (1700 - 320) ));;
+    font-size: calc( 111px + (355 - 111) * ( (100vw - 320px) / (1800 - 320) ));;
     font-family: 'Miller Text Italic';
-    letter-spacing: -.07rem;
-    }
+}
 .eighty-point {
     font-family: 'Miller Text Italic';
     font-size: calc( 33px + (107 - 33) * ( (100vw - 320px) / (1800 - 320) ));;
-   }
+}
 .sixty-point {
     font-family: 'Miller Text Italic';
     font-size: calc( 25px + (80 - 25) * ( (100vw - 320px) / (1800 - 320) ));;
-   }
+}
 .thirty-eight-point {
     font-family: 'Interstate UltraBlack';
     font-size: calc( 16px + (51 - 16) * ( (100vw - 320px) / (1800 - 320) ));;
     color: #dc1e35;
     margin: 5vw auto 2vw auto;
-   }
+}
 .twenty-four-point {
     font-family: 'Interstate Light';
     font-size: calc( 10px + (32 - 10) * ( (100vw - 320px) / (1800 - 320) ));;
-   }
+}
 .eighteen-point {
     font-family: "Miller Text Italic";
     font-size: calc( 10px + (24 - 10) * ( (100vw - 320px) / (1800 - 320) ));;
-   }
-.fourteen-point {
-    font-family: "Interstate Light";
-    font-size: calc( 10px + (18.6 - 10) * ( (100vw - 320px) / (1800 - 320) ));;
-   }
+}
 
 .red-line {
     background-color: #ffffff;
     width: 100vw;
-    height: 500px;
+    height: 30vw;
+    max-height: 500px;
 }
 .red-line div {
     width: .2vw;
@@ -153,7 +157,8 @@ h3 {
 }
 #success-quote {
     position: relative;
-    width: 85%;
+    width: 70%;
+    max-width: 1024px;
     margin: -50px auto 200px auto;
     display: flex;
     display: -moz-flex;
@@ -161,14 +166,14 @@ h3 {
     display: -o-flex;
     display: -webkit-flex;
     flex-direction: column;
-    max-width: 72rem;
-
 }
+
 #success-quote .eighty-point {
     position: relative;
     color: #333e48;
     z-index: 2;
     text-align: center;
+    margin-left: -.3em;
 }
 #success-quote .fourteen-point {
     display: flex;
@@ -178,28 +183,27 @@ h3 {
     display: -webkit-flex;
     align-items: flex-end;
     position: absolute;
-    bottom: -10vw;
-    right: 5vw;
-    width: 13vw;
-    min-width: 145px;
-    max-width: 200px;
-    height: 13vw;
-    min-height: 145px;
-    max-height: 200px;
+    bottom: -6em;
+    right: 5em;
+    width: 11rem;
+    min-width: 100px;
+    max-width: 150px;
+    height: 11rem;
+    min-height: 100px;
+    max-height: 150px;
     background-color: #dc1e35;
     color: #ffffff;
     z-index: 1;
-    padding: 1.5vw;
+    padding: 1.5em;
     line-height: 1.3;
 }
 #red-block-quote {
     background-color: #dc1e35;
-    width: 52vw;
-    max-width: 750px;
-    height: 52vw;
-    max-height: 750px;
-    margin: 0 5vw;
-    padding: 1.5vw;
+    width: 75%;
+    max-width: 950px;
+    height: 75vw;
+    max-height: 950px;
+    margin: 0 auto;
     line-height: 1.4;
     display: flex;
     display: -moz-flex;
@@ -213,6 +217,7 @@ h3 {
 }
 #red-block-quote p {
     color: #ffffff;
+    width: 80%;
 }
 #exciting {
     width: 80%;
@@ -322,7 +327,7 @@ h3 {
     display: -ms-flex;
     display: -o-flex;
     display: -webkit-flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 #white-papers .two-image-container img {
@@ -331,16 +336,17 @@ h3 {
 }
 #white-papers .image-1 {
     position: relative;
-    width: 40%;
+    width: 45%;
     height: auto;
     margin-top: 8vw;
 }
 #white-papers .image-2 {
     position: relative;
-    width: 40%;
+    width: 45%;
     height: auto;
     margin-top: -5vw;
 }
+
 #pet {
     background-color: #eaeaea;
     width: 100%;
@@ -350,12 +356,11 @@ h3 {
     display: -o-flex;
     display: -webkit-flex;
     justify-content: center;
-
 }
 #pet .image-gallery {
     width: 100%;
     max-width: 1100px;
-    padding: 10vw 0;
+    padding: 10vw 0 0 0.5vw;
     display: flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -474,7 +479,7 @@ h3 {
 #pet .blank-image .number-4 {
     position: relative;
     z-index: 3;
-    margin-right: -.8em;
+    margin-left: 1.3em;
 }
 #bbb {
     width: 100%;
@@ -486,16 +491,19 @@ h3 {
     display: -webkit-flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 10rem;
 }
 
 #bbb .text-block {
     position: absolute;
-    right: 17vw;
-    bottom: -6vw;
-    width: 15vw;
-    min-width: 16em;
-    height: 15vw;
-    min-height: 16em;
+    right: 5em;
+    bottom: -6em;
+    width: 30%;
+    min-width: 130px;
+    max-width: 235px;
+    height: 30vw;
+    min-height: 130px;
+    max-height: 235px;
     background-color: #dc1e35;
     color: #ffffff;
     z-index: 1;
@@ -504,9 +512,9 @@ h3 {
 }
 #bbb .sixty-point {
     position: relative;
+    width: 65%;
     z-index: 2;
-    width: 60%;
-    max-width: 950px;
+    max-width: 900px;
     margin-bottom: -5rem;
 }
 #bbb .two-sixty-six-point {
@@ -544,20 +552,20 @@ a:hover {
     display: -o-flex;
     display: -webkit-flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 }
+
 #core-values h3 {
-    width: 45%;
+    width: 40rem;
     text-align: center;
 }
 #core-values p {
-    width: 30%;
-    margin: 2rem;
+    width: 26rem;
+    margin: 2rem 0 2rem 3.5rem;
     line-height: 1.5;
 }
-.button {
-    margin: 5vw 5vw;
-}
+
 .carousel {
     position: relative;
     width: 100%;
@@ -565,17 +573,26 @@ a:hover {
     display: -ms-flex;
     display: -o-flex;
     display: -webkit-flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 .mySlides {
     width: 70%;
     margin: 0 5vw;
 }
+/*compatibility fix for firefox-flexbox */
+#donuts, #donuts .text {
+    min-height: 0;
+    min-width: 0;}
+/* === */
+
 #donuts {
     border: solid #dc1e35 3rem;
-    width: 50vw;
-    height: 50vw;
+    width: 70%;
+    background-color: white;
+    max-width: 900px;
+    height: 70vw;
+    max-height: 900px;
     display: flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -587,28 +604,38 @@ a:hover {
 }
 #donuts .text {
     position: relative;
+    top:7rem;
     display: flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
     display: -webkit-flex;
     justify-content: flex-start;
-    align-items: flex-end;
+    align-items: center;
 }
 #donuts h3 {
-    align-self: flex-end;
+    align-self: baseline;
     color: #333e48;
+    position: relative;
+    bottom: 0;
 }
+#donuts h1{letter-spacing: -10px;}
 #donuts p {
-    margin: 1rem;
+    margin: 0 0 2% 3%;
 }
 #donuts .two-sixty-six-point {
     margin: 0 -2rem 0 -1rem;
 }
 #donuts img {
+    position:relative;
+    bottom: -8rem;
+    right: -8rem;
     align-self: flex-end;
-    margin: 1vw -8rem 0 0;
-    width: 35vw;
+
+    width: 58vw;
+    max-width: 700px;
+    height: 58vw;
+    max-height: 700px;
     overflow: visible;
     z-index: 4;
 }
@@ -625,7 +652,8 @@ a:hover {
     display: -o-flex;
     display: -webkit-flex;
     flex-flow: row wrap;
-    align-items: flex-start;
+    align-items: flex-end;
+    align-content: flex-start;
 }
 #awards .image-gallery .image {
     position: relative;
@@ -662,17 +690,16 @@ a:hover {
     flex-direction: column;
 }
 #awards .seventy-five-percent {
-    width: 72%;
-    height: 22.2vw;
+    flex-basis: 72%;
     max-height: 450px;
-    margin: 0.4vw 1.2vw 0 0;
+    margin: 0.4em 1.2vw 0 0;
     display: flex;
     display: -webkit-flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 #awards .fifty-percent {
-    width: 48%;
+    flex-basis: 48%;
     height: 22.2vw;
     max-height: 450px;
     margin: 0 0.8vw 0.4vw 0;
@@ -682,14 +709,12 @@ a:hover {
     justify-content: flex-start;
 }
 #awards .twenty-five-percent {
-    width: 24%;
-    height: 22.2vw;
+    flex-basis: 24%;
+/*    height: 22.2vw; */
     margin: 0.4vw 0 0 0.4vw;
-    display: flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: -webkit-flex;
+
+
+
 }
 #awards .sixty-point {
     margin: .3em 0;
@@ -712,6 +737,7 @@ a:hover {
     display: -ms-flex;
     display: -o-flex;
     display: -webkit-flex;
+
 }
 .award-logo {
     width: 50%;
@@ -739,36 +765,34 @@ a:hover {
 }
 
 #inspiration-day {
+    position: relative;
     -webkit-background-image: url("assets/InspirationDay/AnnualReport_ImageLinks_InspiratoinDay.jpg");
     background-repeat: no-repeat;
     background-image: url("assets/InspirationDay/AnnualReport_ImageLinks_InspiratoinDay.jpg");
     background-size: cover;
-    width: 100vw;
-    max-width: 1300px;
+    width: 100%;
     height: 215.8vw;
-    max-height: 2805px;
     display: flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
     display: -webkit-flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-
+    overflow-y: hidden;
 }
-#inspiration-day div:not(.text) {
-    width: 65vw;
-    max-width: 1100px;
+#inspiration-day .text {
     position: relative;
-    top: 25vw;
     display: flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
     display: -webkit-flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    margin: 5rem 0 17rem 0
 }
 #inspiration-day h3 {
     position: relative;
@@ -776,15 +800,15 @@ a:hover {
 }
 #inspiration-day .text-block {
     position: absolute;
-    right: 0;
-    margin-top: 12vw;
+    right: -7em;
+    margin-top: 5em;
     z-index: 1;
-    width: 18vw;
-    min-width: 120px;
-    max-width: 250px;
-    height: 18vw;
-    min-height: 120px;
-    max-height: 250px;
+    width: 11em;
+    min-width: 60px;
+    max-width: 235px;
+    height: 11em;
+    min-height: 60px;
+    max-height: 235px;
     align-self: flex-end;
     display: flex;
     display: -moz-flex;
@@ -795,12 +819,11 @@ a:hover {
     justify-content: flex-end;
     background-color: #dc1e35;
     color: #ffffff;
-    padding: 1.8rem;
-    line-height: 1.3;
+    padding: 1.5em;
+    line-height: 1.4;
 }
-#inspiration-day div.text {
+#inspiration-day #pin {
     position: relative;
-    top: 40vw;
     display: flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -810,6 +833,7 @@ a:hover {
     text-align: center;
     line-height: 1.6;
     z-index: 5;
+    padding-bottom: 20em;
 }
 #inspiration-day .twenty-four-point {
     font-family: "Miller Text Italic";
@@ -854,7 +878,7 @@ a:hover {
     background-color: #dc1e35;
     z-index: 4;
     padding: 1.5vw;
-    line-height: 1.3;
+    line-height: 1.1;
 
 }
 .modal {
@@ -867,12 +891,12 @@ a:hover {
     height: 100%; /* Full height */
     overflow: hidden; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    background-color: rgba(0,0,0,0); /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(0,0,0,0);
     margin: 15% auto; /* 15% from the top and centered */
     padding: 0 20px 20px 20px;
     width: 560px; /* Could be more or less, depending on screen size */
@@ -1020,7 +1044,7 @@ a:hover {
         width: 100%;
         height: 100vw;
     }
-    
+
 }
 
 @font-face {
@@ -1047,3 +1071,62 @@ a:hover {
     src: local('Miller Text Italic'),
         url('assets/fonts/miller/MillerText-Italic.otf') format('opentype');
 }
+
+/*Scott Changes */
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 0px;
+    height: 0;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.yesVideo {
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    position:absolute !important;
+    right: 0 !important;
+    bottom:-22.50% !important;}
+
+
+
+/*====FIX FOR AWARD SECTION===*/
+.hide{display:none;}
+.show{display:block;}
+#awards > div.image-gallery > div:nth-child(6) {align-self: flex-start; margin: 0.4vw 0.4vw 0 0;}
+@media only screen  and (max-width: 1024px) {
+
+    #awards .image-gallery .award:nth-child(4){ order:2}
+    #awards .image-gallery .award:nth-child(5){ order:3; }
+    #awards .image-gallery .award:nth-child(10){ display:none;}
+    #awards > div.image-gallery > div:nth-child(7) > div {order:2;}
+    #awards > div.image-gallery > div:nth-child(2) {order:3;}
+    #awards .image-gallery .award-text {flex-basis:100%; height:auto;}
+    #awards > div.image-gallery > div.twenty-five-percent{align-self: flex-start;}
+    .hide{display:block;}
+    .show{display:none;}
+
+}
+
+@media only screen  and (min-width: 1024px) and (max-width: 1400px){
+    .hide{display:block;}
+    .show{display:none;}
+    #awards > div.image-gallery > div:nth-child(6) {align-self: flex-start;}
+}
+
+@media only screen  and (min-width: 1400px) {
+    .hide{display:block;}
+    .show{display:none;}
+    #awards > div.image-gallery > div:nth-child(6) {align-content: flex-start;}
+}
+/*====END FIX FOR AWARD SECTION===*/
+
+/*font sizing to scale up to 1024px and then set size thereafter*/
