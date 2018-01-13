@@ -202,10 +202,10 @@ body {
 }
 #red-block-quote {
     background-color: #dc1e35;
-    width: 75%;
-    max-width: 950px;
-    height: 75vw;
-    max-height: 950px;
+    width: 53%;
+    max-width: 500px;
+    height: 53vw;
+    max-height: 500px;
     margin: 0 auto;
     line-height: 1.4;
     display: flex;
@@ -217,10 +217,10 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 5%;
 }
 #red-block-quote p {
     color: #ffffff;
-    width: 80%;
 }
 #exciting {
     width: 80%;
@@ -1056,10 +1056,20 @@ a:hover {
     #success-quote {
         width: 75%;
     }
+    #red-block-quote {
+        width: 53%;
+        height: 53vw;
+        padding: 7%;
+    }
 }
 @media only screen and (max-width: 750px) {
     #success-quote {
         width: 80%;
+    }
+    #red-block-quote {
+        width: 62%;
+        height: 62vw;
+        padding: 6%;
     }
     #inspiration-day #pin1 {
         top:40vw;
