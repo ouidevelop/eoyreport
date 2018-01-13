@@ -825,16 +825,14 @@ a:hover {
 }
 .pin-container {width: 100%;}
 
-#inspiration-day #pin2 {width: 100%; padding-bottom: 25em; display: flex;}
+#inspiration-day #pin2 {width: 100%; }
 #inspiration-day #pin1 {
-    position: absolute;
-    top:30vw;
     width: 100%;
     display: block;
     text-align: center;
     line-height: 1.6;
     z-index: 5;
-    padding-bottom: 20em;
+    padding: 5em 0 15em 0;
 }
 #inspiration-day .twenty-four-point {
     font-family: "Miller Text Italic";
@@ -1040,7 +1038,7 @@ a:hover {
 }
 @media only screen and (max-width: 401px) {
     #inspiration-day #pin1 {
-        top:40vw;
+        padding-top:10em;
     }
 }
 @media only screen and (min-width: 750px) {
@@ -1059,7 +1057,7 @@ a:hover {
 }
 @media only screen and (max-width: 750px) {
     #inspiration-day #pin1 {
-        top:40vw;
+
     }
     #awards .image-gallery {
         width: 100%;
@@ -1161,4 +1159,3 @@ a:hover {
     right: 0 !important;
     bottom:-22.50% !important;
 }
-
