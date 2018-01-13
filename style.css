@@ -660,13 +660,10 @@ a:hover {
 #awards .image-gallery .image {
     position: relative;
 }
-#awards .image-gallery .image img {
-    width: 100%;
-    height: auto;
-}
 
 #awards .image-gallery .image:before {
     content: "";
+    display: block;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -674,13 +671,9 @@ a:hover {
     right: 0;
     background: none;
     transition: all .3s linear;
-    flex-basis: 100%;
-    height: auto;
 }
 #awards .image-gallery .image:hover:before {
     background: rgba(255,30,52, 0.8);
-    flex-basis: 100%;
-    height: auto;
 }
 #awards .one-hundred-percent {
     width: 100%;
@@ -740,6 +733,8 @@ a:hover {
     width: 85%;
     height: 85%;
     padding: 7.5%;
+    max-width: 225px;
+    max-height: 225px;
     transition: .2s ease;
     opacity: 0;
     position: absolute;
@@ -748,9 +743,6 @@ a:hover {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     display: flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: -webkit-flex;
     justify-content: center;
     align-items: center;
@@ -758,7 +750,7 @@ a:hover {
 }
 
 .award-logo:hover {
-    opacity: 1
+    opacity: 1;
 }
 
 #inspiration-day {
@@ -1042,6 +1034,9 @@ a:hover {
     #inspiration-day #pin1 {
         top:40vw;
     }
+    #success-quote {
+        width: 100%;
+    }
 }
 @media only screen and (min-width: 750px) {
     #title {
@@ -1057,7 +1052,15 @@ a:hover {
         height: 100vw;
     }
 }
+@media only screen and (max-width: 1024px) {
+    #success-quote {
+        width: 75%;
+    }
+}
 @media only screen and (max-width: 750px) {
+    #success-quote {
+        width: 80%;
+    }
     #inspiration-day #pin1 {
         top:40vw;
     }
