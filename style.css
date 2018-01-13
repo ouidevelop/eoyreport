@@ -1041,6 +1041,11 @@ a:hover {
         padding-top:10em;
     }
 }
+@media only screen and (max-width: 685px) {
+    #twenty-four-hour-give .two-sixty-six-point {
+        font-size: 25vw;
+    }
+}
 @media only screen and (min-width: 750px) {
     #title {
         background: no-repeat url("assets/AnnualReport_ImageLinks_1stImage.png");
