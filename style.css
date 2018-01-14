@@ -757,9 +757,9 @@ a:hover {
 
 #inspiration-day {
     position: relative;
-    -webkit-background-image: url("assets/InspirationDay/AnnualReport_ImageLinks_InspirationDay_2_larger.jpg");
+    -webkit-background-image: url("assets/InspirationDay/AnnualReport_ImageLinks_InspirationDay_larger.jpg");
     background-repeat: no-repeat;
-    background-image: url("assets/InspirationDay/AnnualReport_ImageLinks_InspirationDay_2_larger.jpg");
+    background-image: url("assets/InspirationDay/AnnualReport_ImageLinks_InspirationDay_larger.jpg");
     background-size: 100%;
     width: 100%;
     height: 160vw;
@@ -1074,6 +1074,12 @@ a:hover {
     }
     #bbb .sixty-point {
         left: 20%;
+    }
+
+    #inspiration-day {
+        -webkit-background-image: url("assets/InspirationDay/AnnualReport_ImageLinks_InspirationDay.jpg");
+        background-repeat: no-repeat;
+        background-image: url("assets/InspirationDay/AnnualReport_ImageLinks_InspirationDay.jpg");
     }
 }
 @media only screen and (max-width: 750px) {
