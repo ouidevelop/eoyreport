@@ -546,34 +546,27 @@
 
 
 <script>
-$(document).ready(function() {
-    var pin1 = new $.Zebra_Pin($('#pin1'), {
-            top_spacing: 10,
-            contain: true,
-        }),
-        $container = $('.pin-container'),
-        additional_height = -10;
+    $(document).ready(function() {
+        var pin1 = new $.Zebra_Pin($('#pin1'), {
+                top_spacing: 10,
+                contain: true
+        });
+    });
 
 
+    $("#imgSwitch") .mouseover(function () {
+       this.src= "assets/WhitePapers/AnnualReport_ImageLinks_WhitePapers_2_slidein.gif"
+    }).mouseout(function () {
+        this.src= "assets/WhitePapers/AnnualReport_ImageLinks_WhitePapers_2_slideout.gif"
+    });
+
+    $("#imgSwitch2") .mouseover(function () {
+       this.src= "assets/WhitePapers/AnnualReport_ImageLinks_WhitePapers_1_slidein.gif"
+    }).mouseout(function () {
+        this.src= "assets/WhitePapers/AnnualReport_ImageLinks_WhitePapers_1_slideout.gif"
+    });
 
 
-}
+</script>
 
-)
-
-
-$("#imgSwitch") .mouseover(function () {
-   this.src= "assets/WhitePapers/AnnualReport_ImageLinks_WhitePapers_2_slidein.gif"
-}).mouseout(function () {
-    this.src= "assets/WhitePapers/AnnualReport_ImageLinks_WhitePapers_2_slideout.gif"
-});
-
-$("#imgSwitch2") .mouseover(function () {
-   this.src= "assets/WhitePapers/AnnualReport_ImageLinks_WhitePapers_1_slidein.gif"
-}).mouseout(function () {
-    this.src= "assets/WhitePapers/AnnualReport_ImageLinks_WhitePapers_1_slideout.gif"
-});
-
-
-    </script>
 </html>
