@@ -295,14 +295,13 @@ body {
     position: relative;
     width: 80%;
     max-width: 1024px;
-    margin: 10vw auto 6vw auto;
+    margin: 10vw 10% 6vw 10%;
     background-color: #ffffff;
     display: flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: -webkit-flex;
+    -webkit-flex-flow: column wrap;
     flex-flow: column wrap;
+    -webkit-align-items: flex-start;
     align-items: flex-start;
 }
 #white-papers p {
@@ -314,16 +313,15 @@ body {
     color: #c3c5c8;
 }
 #white-papers .two-image-container {
-    position: relative;
     width: 100%;
-    margin-top: -4vw;
+    position: relative;
+    margin: -4vw auto 0 auto;
     align-self: center;
     display: flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: -webkit-flex;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
+    -webkit-align-items: center;
     align-items: center;
 }
 #white-papers .two-image-container img {
@@ -333,13 +331,12 @@ body {
 #white-papers .image-1 {
     position: relative;
     width: 45%;
-    height: auto;
+
     margin-top: 8vw;
 }
 #white-papers .image-2 {
     position: relative;
     width: 45%;
-    height: auto;
     margin-top: -5vw;
 }
 
@@ -487,12 +484,12 @@ body {
     position: absolute;
     right: 5em;
     bottom: -6em;
-    width: 27vw;
+    width: 24vw;
     min-width: 130px;
-    max-width: 175px;
-    height: 27vw;
+    max-width: 220px;
+    height: 24vw;
     min-height: 130px;
-    max-height: 175px;
+    max-height: 220px;
     background-color: #dc1e35;
     color: #ffffff;
     z-index: 1;
@@ -505,7 +502,7 @@ body {
     width: auto;
     z-index: 2;
     max-width: 900px;
-    margin:0 auto -5rem auto;
+    margin-bottom: -5rem;
 }
 #bbb .two-sixty-six-point {
     position: relative;
@@ -853,10 +850,10 @@ a:hover {
     position: absolute;
     bottom: -6vw;
     right: 7vw;
-    width: 17vw;
-    min-width: 140px;
-    height: 17vw;
-    min-height: 140px;
+    width: 14vw;
+    min-width: 150px;
+    height: 14vw;
+    min-height: 150px;
     background-color: #dc1e35;
     z-index: 4;
     padding: 2%;
