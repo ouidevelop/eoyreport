@@ -316,6 +316,8 @@ body {
     display: inline-block;
     color: #333e48;
 }
+
+#white-papers .text {z-index: 2}
 #white-papers p.two-sixty-six-point {
     margin-right: -5vw;
     color: #c3c5c8;
@@ -324,6 +326,7 @@ body {
     position: relative;
     width: 100%;
     margin-top: -4vw;
+    right:3vw;
     align-self: center;
     display: flex;
     display: -moz-flex;
@@ -332,23 +335,26 @@ body {
     display: -webkit-flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
 #white-papers .two-image-container img {
     width: 100%;
     height: auto;
+
 }
 #white-papers .image-1 {
     position: relative;
-    width: 45%;
+    width: 50%;
     height: auto;
-    margin-top: 8vw;
+    bottom: 0vw;
 }
 #white-papers .image-2 {
     position: relative;
-    width: 45%;
+    width: 50%;
     height: auto;
-    margin-top: -5vw;
+    bottom: 8vw;
 }
+
 
 #pet {
     background-color: #eaeaea;

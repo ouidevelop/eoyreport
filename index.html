@@ -91,8 +91,11 @@
         </div>
         <a href="http://www.verdinmarketing.com/blog/white-paper-marketing-to-millennials/?s=white papers" target="_blank">
             <div class="two-image-container">
-                <div  class="image-1"><img src="assets/WhitePapers/AnnualReport_ImageLinks_WhitePapers_1.png" alt="newspaper-articles"></div>
-                <div  class="image-2"><img src="assets/WhitePapers/AnnualReport_ImageLinks_WhitePapers_2.png" alt="newspaper-articles-2"></div>
+                <div  class="image-1"><img src="assets/WhitePapers/AnnualReport_ImageLinks_WhitePapers_1.png" alt="newspaper-articles" id="imgSwitch2"></div>
+                <div  class="image-2" >
+                    <img src="assets/WhitePapers/AnnualReport_ImageLinks_WhitePapers_2.png" alt="newspaper-articles-2" id="imgSwitch">
+
+                </div>
             </div>
         </a>
     </div>
@@ -555,6 +558,19 @@ $(document).ready(function() {
 }
 
 )
+
+
+$("#imgSwitch") .mouseover(function () {
+   this.src= "assets/WhitePapers/AnnualReport_ImageLinks_WhitePapers_2_slidein.gif"
+}).mouseout(function () {
+    this.src= "assets/WhitePapers/AnnualReport_ImageLinks_WhitePapers_2_slideout.gif"
+});
+
+$("#imgSwitch2") .mouseover(function () {
+   this.src= "assets/WhitePapers/AnnualReport_ImageLinks_WhitePapers_1_slidein.gif"
+}).mouseout(function () {
+    this.src= "assets/WhitePapers/AnnualReport_ImageLinks_WhitePapers_1_slideout.gif"
+});
 
 
     </script>
