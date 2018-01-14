@@ -202,10 +202,10 @@ body {
 }
 #red-block-quote {
     background-color: #dc1e35;
-    width: 53%;
-    max-width: 500px;
-    height: 53vw;
-    max-height: 500px;
+    width: 51%;
+    max-width: 740px;
+    height: 51vw;
+    max-height: 740px;
     margin: 0 auto;
     line-height: 1.4;
     display: flex;
