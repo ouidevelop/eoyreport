@@ -295,7 +295,7 @@ body {
     position: relative;
     width: 80%;
     max-width: 1024px;
-    margin: 10vw 10% 6vw 10%;
+    margin: 6vw 10% 6vw 10%;
     background-color: #ffffff;
     display: flex;
     display: -webkit-flex;
@@ -1092,7 +1092,7 @@ a:hover {
 
     #awards .seventy-five-percent {
         width: 100%;
-        height: fit-content;
+        height: 40em;
     }
 
     #awards .twenty-five-percent {
