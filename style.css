@@ -578,7 +578,7 @@ a:hover {
     width: 70%;
     margin: 0 5vw;
 }
-/*compatibility fix for firefox-flexbox */
+/*compatibility fix for firefox-flexbox*/
 #donuts, #donuts .text {
     min-height: 0;
     min-width: 0;}
@@ -586,10 +586,10 @@ a:hover {
 
 #donuts {
     border: solid #dc1e35 3rem;
-    width: 70%;
+    width: 65%;
     background-color: white;
     max-width: 900px;
-    height: 70vw;
+    height: 65vw;
     max-height: 900px;
     z-index: 1;
     display: flex;
@@ -603,38 +603,40 @@ a:hover {
 }
 #donuts .text {
     position: relative;
-    top:7rem;
     display: flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
     display: -webkit-flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-end;
+    z-index: 5;
 }
 #donuts h3 {
-    align-self: baseline;
     color: #333e48;
     position: relative;
-    bottom: 0;
+    margin-bottom: 4rem;
 }
 #donuts h1{letter-spacing: -10px;}
 #donuts p {
     margin: 0 0 2% 3%;
 }
+#donuts p.fourteen-point {
+    position: relative;
+    z-index: 5;
+}
 #donuts .two-sixty-six-point {
     margin: 0 -2rem 0 -1rem;
 }
 #donuts img {
-    position:relative;
-    bottom: -8rem;
-    right: -8rem;
+    position:absolute;
+    bottom: -10rem;
+    right: -10rem;
     align-self: flex-end;
-
-    width: 58vw;
-    max-width: 700px;
-    height: 58vw;
-    max-height: 700px;
+    width: 63vw;
+    max-width: 850px;
+    height: 63vw;
+    max-height: 850px;
     overflow: visible;
     z-index: 4;
 }
