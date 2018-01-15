@@ -246,6 +246,9 @@ body {
     position: relative;
     z-index: 1;
 }
+#exciting .text-block:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 #exciting .text-block {
     position: absolute;
     right: -2em;
@@ -255,6 +258,7 @@ body {
     max-width: 19em;
     padding: 1.5em;
     background-color: #333e48;
+    transition: box-shadow .5s;
 }
 #exciting .text-block p {
     color: #ffffff;
@@ -265,6 +269,7 @@ body {
     position: relative;
     margin: 2vw 0;
 }
+
 #exciting .two-image-container {
     width: 100%;
     margin: 2vw 0;
