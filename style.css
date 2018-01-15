@@ -49,6 +49,7 @@ table {
 /*end of css reset*/
 html {
     font-size: calc( 6px + (16 - 6) * ( (100vw - 320px) / (1800 - 320) ));;
+    width: 100%;
 }
 body {
     width: 100%;
@@ -490,6 +491,7 @@ body {
     margin-top: 6vw;
 }
 #bbb .text {
+    position: relative;
     width: 100%;
 }
 #bbb .text-block {
@@ -510,11 +512,11 @@ body {
 }
 #bbb .sixty-point {
     position: relative;
-    left: 25%;
-    width: auto;
+    left: 20%;
     z-index: 2;
+    width: 80%;
     max-width: 1000px;
-    margin-bottom: -5rem;
+    margin-bottom: -4rem;
 }
 #bbb .two-sixty-six-point {
     position: relative;
@@ -828,8 +830,6 @@ a:hover {
     line-height: 1.3;
 }
 .pin-container {width: 100%;}
-
-#inspiration-day #pin2 {width: 100%; }
 #inspiration-day #pin1 {
     width: 100%;
     display: block;
@@ -982,7 +982,7 @@ a:hover {
     background-color: #dc1e35;
     color: #ffffff;
     z-index: 1;
-    padding: 3%;
+    padding: 2%;
     line-height: 1.3;
 }
 #conclusion {
