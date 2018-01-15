@@ -113,6 +113,7 @@ body {
     width: 100vw;
     height: 30vw;
     max-height: 500px;
+    z-index: 0;
 }
 .red-line div {
     width: .2vw;
@@ -120,6 +121,7 @@ body {
     height: inherit;
     margin: 0 auto;
     background-color: #dc1e35;
+    z-index: 0;
 }
 .text-block p {
     color: #ffffff;
@@ -203,9 +205,9 @@ body {
 #red-block-quote {
     background-color: #dc1e35;
     width: 51%;
-    max-width: 740px;
+    max-width: 780px;
     height: 51vw;
-    max-height: 740px;
+    max-height: 780px;
     margin: 0 auto;
     line-height: 1.4;
     display: flex;
@@ -321,9 +323,6 @@ body {
     right:3vw;
     align-self: center;
     display: flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: -webkit-flex;
     -webkit-justify-content: space-between;
     justify-content: space-between;
@@ -357,6 +356,7 @@ body {
     display: -o-flex;
     display: -webkit-flex;
     justify-content: center;
+    z-index: 1
 }
 #pet .image-gallery {
     width: 100%;
@@ -509,7 +509,7 @@ body {
     left: 25%;
     width: auto;
     z-index: 2;
-    max-width: 900px;
+    max-width: 1000px;
     margin-bottom: -5rem;
 }
 #bbb .two-sixty-six-point {
@@ -551,6 +551,7 @@ a:hover {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
 
 #core-values h3 {
@@ -590,6 +591,7 @@ a:hover {
     max-width: 900px;
     height: 70vw;
     max-height: 900px;
+    z-index: 1;
     display: flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -773,6 +775,7 @@ a:hover {
    align-items: center;
     display: block;
     top: 15vw;
+    z-index: 1;
 }
 #inspiration-day .text {
     display: flex;
@@ -843,6 +846,7 @@ a:hover {
     display: -webkit-flex;
     flex-direction: column;
     justify-content: center;
+    z-index: 1;
 }
 #twenty-four-hour-give .sixty-point {
     position: relative;
@@ -926,6 +930,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     margin-top: 10vw;
+    z-index: 1;
 }
 #birthday .text {
     width: 70%;
