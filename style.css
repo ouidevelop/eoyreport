@@ -132,7 +132,7 @@ body {
     width: 100%;
     height: 58vw;
     overflow-y: visible;
-    margin: 0 0 30vw 0;
+    margin: 0 0 20vw 0;
 
 }
 
@@ -164,7 +164,7 @@ body {
     position: relative;
     width: 70%;
     max-width: 1024px;
-    margin: -50px auto 200px auto;
+    margin: 8vw auto;
     display: flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -227,7 +227,7 @@ body {
 #exciting {
     width: 80%;
     max-width: 1024px;
-    margin: 100px auto;
+    margin: 6vw auto;
     background-color: #ffffff;
     display: flex;
     display: -moz-flex;
@@ -246,6 +246,9 @@ body {
     position: relative;
     z-index: 1;
 }
+#exciting .text-block:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 #exciting .text-block {
     position: absolute;
     right: -2em;
@@ -255,6 +258,7 @@ body {
     max-width: 19em;
     padding: 1.5em;
     background-color: #333e48;
+    transition: box-shadow .5s;
 }
 #exciting .text-block p {
     color: #ffffff;
@@ -265,9 +269,10 @@ body {
     position: relative;
     margin: 2vw 0;
 }
+
 #exciting .two-image-container {
     width: 100%;
-    margin: 2vw 0;
+    margin: 2vw 0 0 0;
     position: relative;
     display: flex;
     display: -webkit-flex;
@@ -296,8 +301,8 @@ body {
 #white-papers {
     position: relative;
     width: 80%;
-    max-width: 1024px;
-    margin: 6vw 10% 6vw 10%;
+    max-width: 1100px;
+    margin: 3vw auto;
     background-color: #ffffff;
     display: flex;
     display: -webkit-flex;
@@ -318,9 +323,8 @@ body {
 }
 #white-papers .two-image-container {
     position: relative;
-    width: 100%;
-    margin-top: -4vw;
-    right:3vw;
+    width: 110%;
+    max-width: 1100px;
     align-self: center;
     display: flex;
     display: -webkit-flex;
@@ -338,13 +342,13 @@ body {
     position: relative;
     width: 50%;
     height: auto;
-    bottom: 0vw;
+    bottom: 2vw;
 }
 #white-papers .image-2 {
     position: relative;
     width: 50%;
     height: auto;
-    bottom: 8vw;
+    bottom: 6vw;
 }
 
 #pet {
@@ -483,21 +487,21 @@ body {
 #bbb {
     width: 100%;
     position: relative;
-    margin-top: 10rem;
+    margin-top: 6vw;
 }
 #bbb .text {
     width: 100%;
 }
 #bbb .text-block {
     position: absolute;
-    right: 5em;
-    bottom: -6em;
-    width: 24vw;
-    min-width: 130px;
-    max-width: 220px;
-    height: 24vw;
-    min-height: 130px;
-    max-height: 220px;
+    right: 7vw;
+    bottom: -6vw;
+    width: 20vw;
+    min-width: 140px;
+    max-width: 230px;
+    height: 20vw;
+    min-height: 140px;
+    max-height: 230px;
     background-color: #dc1e35;
     color: #ffffff;
     z-index: 1;
@@ -840,7 +844,7 @@ a:hover {
 }
 #twenty-four-hour-give {
     width: 100%;
-    margin: 10vw auto 0 auto;
+    margin: 6vw auto 10vw auto;
     position: relative;
     display: flex;
     display: -moz-flex;
@@ -871,15 +875,16 @@ a:hover {
     position: absolute;
     bottom: -6vw;
     right: 7vw;
-    width: 14vw;
-    min-width: 150px;
-    height: 14vw;
-    min-height: 150px;
+    width: 15vw;
+    min-width: 140px;
+    max-width: 210px;
+    height: 15vw;
+    min-height: 140px;
+    max-height: 210px;
     background-color: #dc1e35;
     z-index: 4;
     padding: 2%;
     line-height: 1.3;
-
 }
 .modal {
     display: none; /* Hidden by default */
@@ -932,7 +937,7 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 10vw;
+    margin-top: 6vw;
     z-index: 1;
 }
 #birthday .text {
@@ -969,13 +974,15 @@ a:hover {
     right: 7vw;
     bottom: -6vw;
     width: 13vw;
-    min-width: 14rem;
+    min-width: 110px;
     height: 13vw;
-    min-height: 14rem;
+    min-height: 110px;
+    max-width: 170px;
+    max-height: 170px;
     background-color: #dc1e35;
     color: #ffffff;
     z-index: 1;
-    padding: 1.5vw;
+    padding: 3%;
     line-height: 1.3;
 }
 #conclusion {
@@ -1083,11 +1090,18 @@ a:hover {
     #bbb .sixty-point {
         left: 20%;
     }
-
+    #bbb .text-block  {
+        width: 22vw;
+        height: 22vw;
+    }
     #inspiration-day {
         -webkit-background-image: url("assets/InspirationDay/AnnualReport_ImageLinks_InspirationDay.jpg");
         background-repeat: no-repeat;
         background-image: url("assets/InspirationDay/AnnualReport_ImageLinks_InspirationDay.jpg");
+    }
+    #twenty-four-hour-give .text-block {
+        width: 17vw;
+        height: 17vw;
     }
 }
 @media only screen and (max-width: 750px) {
@@ -1101,6 +1115,10 @@ a:hover {
     }
     #bbb .sixty-point {
         left: 18%;
+    }
+    #bbb .text-block  {
+        width: 24vw;
+        height: 24vw;
     }
     #inspiration-day #pin1 {
 
