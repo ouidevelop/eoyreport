@@ -1232,3 +1232,8 @@ a:hover {
     right: 0 !important;
     bottom:-22.50% !important;
 }
+
+/*ugly hack to fix donut flashing at the top on load*/
+.hideMe {
+    visibility:hidden;
+}

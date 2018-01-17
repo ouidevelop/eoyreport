@@ -298,8 +298,8 @@
             <h1 class="two-sixty-six-point">36</h1>
             <h3 class="sixty-point">Boxes<br>of Donuts</h3>
         </div>
-            <img src="assets/Donuts/VMI_Donut.gif" alt="donuts gif">
-            <p class="fourteen-point">(We really like donuts.)</p>
+        <img class="hideMe" src="assets/Donuts/VMI_Donut.gif" alt="donuts gif">
+        <p class="fourteen-point">(We really like donuts.)</p>
     </div>
     <div class="red-line panel">
         <div>
@@ -566,6 +566,9 @@
 
         // this does a little fade in/out when scrolling to an element.
         sr.reveal('.panel');
+
+        // ugly hack to get rid of donut flashing at top of page.
+        $('.hideMe').removeClass('hideMe');
     </script>
 </body>
 
