@@ -7,16 +7,20 @@
     <link rel="stylesheet" type="text/css" href="./style.css">
     <link rel="stylesheet" type="text/css" href="https://cloud.typenetwork.com/projects/1737/fontface.css/">
     <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
-      crossorigin="anonymous"></script>
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/gh/stefangabos/Zebra_Pin/dist/zebra_pin.min.js"></script>
+      
+
+
+      <script src="videoScroller.js"> </script>
 </head>
 <body>
     <div id="title">
         <div class="fullscreen-bg">
             <div id="cut-out"></div>
-            <video loop muted autoplay poster="assets/Videos/intro/intro_banner_fallback.png" class="fullscreen-bg__video">
+            <video loop muted autoplay poster="assets/Videos/intro/intro_banner_fallback.png" class="fullscreen-bg__video" id="playTriggerTop">
                 <source src="assets/Videos/intro/intro_banner.webm" type="video/webm">
                 <source src="assets/Videos/intro/intro_banner.mp4" type="video/mp4">
                 <source src="assets/Videos/intro/intro_banner.ogg" type="video/ogg">
@@ -526,18 +530,20 @@
             <p class="twenty-four-point">We have work to do.</p>
         </div>
     </div>
-    <div id="footer">
 
-<div class="fullscreen-bg">
+    <div id="footer">
+<div id="videoContainer">
+<div class="fullscreen-bg" >
         <div id="triangle"></div>
-        <video loop muted autoplay poster="assets/Videos/outro/outro_banner_fallback.png" class="fullscreen-bg__video">
-            <source src="assets/Videos/outro/outro_banner.webm" type="video/webm">
+        <video loop muted  poster="assets/Videos/outro/outro_banner_fallback.png" class="fullscreen-bg__video" id="playTrigger">
+  <source src="assets/Videos/outro/outro_banner.webm" type="video/webm">
+    <source src="assets/Videos/outro/outro_banner.mp4" type="video/mp4">
   <source src="assets/Videos/outro/outro_banner.ogg" type="video/ogg">
-  <source src="assets/Videos/outro/outro_banner.webm.mp4" type="video/mp4">
+
 
         </video>
     </div>
-
+</div>
     </div>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script>
