@@ -1238,3 +1238,14 @@ a:hover {
 .hideMe {
     visibility:hidden;
 }
+
+.bob {
+    z-index: 1000;
+    font-family: Arial;
+    float: right;
+    font-size: 50px;
+    position: relative;
+    background: black;
+    padding-right: 7px;
+    padding-left: 7px;
+}

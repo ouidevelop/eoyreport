@@ -451,46 +451,46 @@
     <div id="twenty-four-hour-give">
         <p class="two-sixty-six-point panel">$135,808</p>
         <p class="sixty-point panel">donated to the winner of the <br>24-Hour Give.</p>
-        <a id="myBtn"><img src="assets/TwentyFourHourGive/AnnualReport_ImageLinks_24hrGive.jpg"/></a>
-        <div id="videoModal" class="modal">
+        <a id="myBtn"><img id="24hr-img" src="assets/TwentyFourHourGive/AnnualReport_ImageLinks_24hrGive.jpg"/></a>
+        
+        <script>
 
-            <div class="modal-content" id="modalContent">
-                <span class="close">&times;</span>
-
-            </div>
-        </div>
-        <script>//Get the modal
-            var modal = document.getElementById('videoModal');
-
-            // Get the button that opens the modal
             var a = document.getElementById("myBtn");
-
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-
-            // When the user clicks on the button, open the modal
+            var clicks = 0
+            var twentyFourHrImg = document.getElementById("24hr-img");
 
             a.onclick = function() {
-                document.getElementById("myBtn").innerHTML= '<div class="videoWrapper"><iframe   src="https://www.youtube.com/embed/H693mrkNcTo?autoplay=1&modestbranding=1&playsinline=1&fs=0&rel=0"  frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen ></iframe></div>';
-                 var textBoxToggle = document.querySelector("div#twenty-four-hour-give div.text-block");
-
-                  if (textBoxToggle.classList.contains('noVideo')) {
-                      textBoxToggle.classList.remove('noVideo');
-                      textBoxToggle.classList.add('yesVideo');
-                  }
-            };
-
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() {
-                modal.style.display = "none";
-            };
-
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-                if (event.target === modal) {
-                    modal.style.display = "none";
+                clicks++
+                console.log(clicks)
+                if (clicks > 1) {
+                    clicks = 0
+                    return
                 }
-            }
+                var video = document.createElement('div')
+                video.innerHTML = '<div class="videoWrapper"><p class="bob">X</p><iframe   src="https://www.youtube.com/embed/H693mrkNcTo?autoplay=1&modestbranding=1&playsinline=1&fs=0&rel=0&wmode=opaque"  frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen ></iframe></div>';
+
+                twentyFourHrImg.style.display = 'none';
+                a.appendChild(video)
+            
+                var textBoxToggle = document.querySelector("div#twenty-four-hour-give div.text-block");
+
+                if (textBoxToggle.classList.contains('noVideo')) {
+                    textBoxToggle.classList.remove('noVideo');
+                    textBoxToggle.classList.add('yesVideo');
+                }
+
+                var bob = document.getElementsByClassName("bob")[0];
+                var videoWrapper = document.getElementsByClassName("videoWrapper")[0];
+                
+                bob.onclick = function() {
+                    clicks++
+                    textBoxToggle.classList.remove('yesVideo');
+                    textBoxToggle.classList.add('noVideo');
+                    twentyFourHrImg.style.display = 'block';
+                    video.remove();
+                }
+            };
+
         </script>
         <div class="text-block noVideo">
             <p class="fourteen-point">We brought back the 24-Hour Give for the fourth year in a row,
