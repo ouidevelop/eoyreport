@@ -799,9 +799,8 @@ a:hover {
    display: -ms-flex;
    display: -o-flex;
    display: -webkit-flex;
-   flex-direction: column;
-   justify-content: flex-start;
-   align-items: center;
+   justify-content: center;
+   align-items: flex-start;
     display: block;
     top: 15vw;
     z-index: 1;
@@ -824,6 +823,12 @@ a:hover {
     z-index: 2;
     text-align: center;
     overflow: visible;
+}
+#inspiration-day .caption {
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+
 }
 #inspiration-day .text-block {
     position: absolute;
@@ -858,9 +863,6 @@ a:hover {
     z-index: 5;
     padding: 5em 0 15em 0;
 }
-
-
-
 #inspiration-day .twenty-four-point {
     font-family: "Miller Text Italic";
     color: #ffffff;
@@ -1068,16 +1070,34 @@ a:hover {
     #bbb .sixty-point {
         left: 1%;
     }
+    #birthday .text-block {
+        bottom: 25vw;
+    }
 }
 @media only screen and (max-width: 685px) {
+    #exciting .container {
+        margin: 4vw 0;
+    }
+    #exciting .two-image-container {
+        margin: 4vw 0;
+    }
     #twenty-four-hour-give .two-sixty-six-point {
         font-size: 25vw;
+    }
+    #twenty-four-hour-give .text-block {
+        bottom: -25vw;
     }
     #success-quote {
         width: 100%;
     }
     #bbb .sixty-point {
         left: 5%;
+    }
+    #bbb .text-block {
+        bottom: -25vw;
+    }
+    #birthday .text-block {
+        bottom: -20vw;
     }
 }
 @media only screen and (min-width: 1100px) {
@@ -1119,12 +1139,6 @@ a:hover {
     #success-quote {
         width: 80%;
     }
- /*   #success-quote  .eighty-point {
-        z-index: 3;
-    }
-    #success-quote .fourteen-point {
-        z-index: 5;
-    }*/
     #red-block-quote {
         width: 62%;
         height: 62vw;
@@ -1191,6 +1205,11 @@ a:hover {
 
     #inspiration-day .text-block {
         right: 16%;
+    }
+    #inspiration-day #pin1 {
+        visibility: hidden;
+        opacity: 0;
+        display: none;
     }
 }
 @font-face {
