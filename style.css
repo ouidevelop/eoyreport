@@ -200,6 +200,7 @@ body {
     z-index: 2;
     text-align: center;
     margin-left: -.3em;
+    padding-bottom: 10rem;
 }
 #success-quote .fourteen-point {
     display: flex;
@@ -209,13 +210,13 @@ body {
     display: -webkit-flex;
     align-items: flex-end;
     position: absolute;
-    bottom: -6em;
+    bottom: 0;
     right: 5em;
     width: 11rem;
-    min-width: 100px;
+    min-width: 90px;
     max-width: 150px;
     height: 11rem;
-    min-height: 100px;
+    min-height: 90px;
     max-height: 150px;
     background-color: #dc1e35;
     color: #ffffff;
@@ -1118,6 +1119,12 @@ a:hover {
     #success-quote {
         width: 80%;
     }
+ /*   #success-quote  .eighty-point {
+        z-index: 3;
+    }
+    #success-quote .fourteen-point {
+        z-index: 5;
+    }*/
     #red-block-quote {
         width: 62%;
         height: 62vw;
