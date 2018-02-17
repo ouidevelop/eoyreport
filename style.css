@@ -519,10 +519,10 @@ body {
     position: absolute;
     right: 7vw;
     bottom: -6vw;
-    width: 20vw;
+    width: 16em;
     min-width: 140px;
     max-width: 230px;
-    height: 20vw;
+    height: 16em;
     min-height: 140px;
     max-height: 230px;
     background-color: #dc1e35;
@@ -900,11 +900,11 @@ a:hover {
     position: absolute;
     bottom: -6vw;
     right: 7vw;
-    width: 15vw;
-    min-width: 140px;
+    width: 14em;
+    min-width: 120px;
     max-width: 210px;
-    height: 15vw;
-    min-height: 140px;
+    height: 14em;
+    min-height: 120px;
     max-height: 210px;
     background-color: #dc1e35;
     z-index: 4;
@@ -998,12 +998,8 @@ a:hover {
     position: absolute;
     right: 7vw;
     bottom: -6vw;
-    width: 13vw;
-    min-width: 110px;
-    height: 13vw;
-    min-height: 110px;
-    max-width: 170px;
-    max-height: 170px;
+    width: 15em;
+    height: 15em;
     background-color: #dc1e35;
     color: #ffffff;
     z-index: 1;
@@ -1072,6 +1068,8 @@ a:hover {
     }
     #birthday .text-block {
         bottom: 25vw;
+        width: 12em;
+        height: 12em;
     }
 }
 @media only screen and (max-width: 685px) {
@@ -1086,6 +1084,9 @@ a:hover {
     }
     #twenty-four-hour-give .text-block {
         bottom: -25vw;
+        right: 0;
+        width: 16em;
+        height: 16em;
     }
     #success-quote {
         width: 100%;
@@ -1095,9 +1096,15 @@ a:hover {
     }
     #bbb .text-block {
         bottom: -25vw;
+        width: 14em;
+        height: 14em;
+        right: 0;
     }
     #birthday .text-block {
+        right: 0;
         bottom: -20vw;
+        width: 15em;
+        height: 15em;
     }
 }
 @media only screen and (min-width: 1100px) {
@@ -1121,18 +1128,14 @@ a:hover {
     #bbb .sixty-point {
         left: 20%;
     }
-    #bbb .text-block  {
-        width: 22vw;
-        height: 22vw;
+    #bbb .text-block {
+        width: 17em;
+        height: 17em;
     }
     #inspiration-day {
         -webkit-background-image: url("assets/InspirationDay/AnnualReport_ImageLinks_InspirationDay.jpg");
         background-repeat: no-repeat;
         background-image: url("assets/InspirationDay/AnnualReport_ImageLinks_InspirationDay.jpg");
-    }
-    #twenty-four-hour-give .text-block {
-        width: 17vw;
-        height: 17vw;
     }
 }
 @media only screen and (max-width: 750px) {
@@ -1147,11 +1150,6 @@ a:hover {
     #bbb .sixty-point {
         left: 18%;
     }
-    #bbb .text-block  {
-        width: 24vw;
-        height: 24vw;
-    }
-
     #awards .image-gallery {
         width: 100%;
         display: -webkit-flex;
