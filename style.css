@@ -145,7 +145,7 @@ body {
     display: block;
     z-index: 10;
     bottom: 0;
-    width: 100%;
+    width: 101%;
     height: 25%;
     background: #ffffff;
     -webkit-clip-path: polygon(0 0, 50% 90%, 100% 0, 100% 100%, 0 100%);
@@ -1058,55 +1058,6 @@ a:hover {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 10%, 50% 100%, 0 10%);
     clip-path: polygon(0 0, 100% 0, 100% 10%, 50% 100%, 0 10%);
 }
-
-@media only screen and (max-width: 401px) {
-    #inspiration-day #pin1 {
-        padding-top:10em;
-    }
-    #bbb .sixty-point {
-        left: 1%;
-    }
-    #birthday .text-block {
-        bottom: 25vw;
-        width: 12em;
-        height: 12em;
-    }
-}
-@media only screen and (max-width: 685px) {
-    #exciting .container {
-        margin: 4vw 0;
-    }
-    #exciting .two-image-container {
-        margin: 4vw 0;
-    }
-    #twenty-four-hour-give .two-sixty-six-point {
-        font-size: 25vw;
-    }
-    #twenty-four-hour-give .text-block {
-        bottom: -20vw;
-        right: 0;
-        width: 17em;
-        height: 17em;
-    }
-    #success-quote {
-        width: 100%;
-    }
-    #bbb .sixty-point {
-        left: 5%;
-    }
-    #bbb .text-block {
-        bottom: -20vw;
-        width: 14em;
-        height: 14em;
-        right: 0;
-    }
-    #birthday .text-block {
-        right: 0;
-        bottom: -20vw;
-        width: 15em;
-        height: 15em;
-    }
-}
 @media only screen and (min-width: 1100px) {
 
     #awards {
@@ -1214,6 +1165,61 @@ a:hover {
         display: none;
     }
 }
+@media only screen and (max-width: 685px) {
+    #exciting .container {
+        margin: 4vw 0;
+    }
+    #exciting .two-image-container {
+        margin: 4vw 0;
+    }
+    #twenty-four-hour-give .two-sixty-six-point {
+        font-size: 25vw;
+    }
+    #twenty-four-hour-give .text-block {
+        bottom: -20vw;
+        right: 0;
+        width: 17em;
+        height: 17em;
+    }
+    #success-quote {
+        width: 100%;
+    }
+    #bbb .sixty-point {
+        left: 15%;
+    }
+    #bbb .text-block {
+        bottom: -20vw;
+        width: 14em;
+        height: 14em;
+        right: 0;
+    }
+    #birthday .text-block {
+        right: 0;
+        bottom: -20vw;
+        width: 15em;
+        height: 15em;
+    }
+}
+@media only screen and (max-width: 401px) {
+    #inspiration-day #pin1 {
+        padding-top:10em;
+    }
+    #bbb .sixty-point {
+        left: 5%;
+    }
+    #birthday .text-block {
+        bottom: -15vw;
+        width: 14em;
+        height: 14em;
+    }
+    #bbb .text-block {
+        width: 10em;
+        min-width: 130px;
+        height: 10em;
+        min-height: 130px;
+    }
+}
+
 @font-face {
     font-family: 'Interstate Light';
     font-style: normal;
