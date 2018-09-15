@@ -657,8 +657,8 @@ a:hover {
 }
 #donuts img {
     position:absolute;
-    bottom: -10rem;
-    right: -10rem;
+    margin-top: 16%;
+    margin-left: 12%;
     align-self: flex-end;
     width: 63vw;
     max-width: 850px;
